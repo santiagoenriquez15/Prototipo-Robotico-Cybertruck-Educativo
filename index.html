@@ -28,6 +28,23 @@
     display: block;
     margin: auto;
   }
+    .prototype-video {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+  text-align: center;
+}
+
+.prototype-video video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+}
     .container { max-width: 1000px; margin: -30px auto 50px; padding: 0 20px; }
     .intro, .card { background: white; border-radius: 16px; padding: 28px; box-shadow: 0 8px 25px rgba(0,0,0,.08); }
     .intro { margin-bottom: 25px; }
@@ -49,6 +66,21 @@
       src="cybertruck-vistas.png"
       alt="Tres vistas del prototipo robótico Cybertruck educativo">
   </section>
+  <section class="prototype-video">
+
+  <h2>🚗 El prototipo en funcionamiento</h2>
+
+  <p>
+    Demostración del prototipo robótico Cybertruck siendo controlado
+    mediante la aplicación móvil desarrollada en MIT App Inventor.
+  </p>
+
+  <video autoplay muted loop playsinline>
+    <source src="video/cybertruck-demostracion.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+  </video>
+
+</section>
   <main class="container">
     <section class="intro">
       <h2>Recursos del proyecto</h2>
