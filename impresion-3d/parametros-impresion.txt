@@ -1,0 +1,62 @@
+GUÍA DE PARÁMETROS RECOMENDADOS PARA IMPRESIÓN 3D (PLA)
+PROTOTIPO ROBÓTICO CYBERTRUCK EDUCATIVO
+
+======================================================================
+1. CONFIGURACIÓN GENERAL DEL MATERIAL (PLA)
+======================================================================
+• Temperatura de Extrusión / Boquilla (Nozzle): 200 °C – 205 °C
+• Temperatura de Cama Caliente (Bed): 60 °C
+• Diámetro de Boquilla (Nozzle Diameter): 0.4 mm
+• Diámetro del Filamento: 1.75 mm
+• Enfriamiento de Capa (Fan Speed): 100% (activar a partir de la capa 2 o 3)
+• Adhesión a la Cama: Falda (Skirt) para la mayoría de piezas. 
+  (Usar Borde / Brim de 4-5mm si la pieza presenta problemas de agarre).
+
+======================================================================
+2. PARÁMETROS DE IMPRESIÓN GENERALES (APLICABLES A TODAS LAS PIEZAS)
+======================================================================
+• Altura de Capa (Layer Height): 0.2 mm (Excelente balance entre calidad y velocidad)
+• Altura de Primera Capa: 0.20 mm - 0.24 mm
+• Paredes / Perímetros (Wall Loops / Perimeters): 3 paredes (aprox. 1.2 mm de grosor)
+• Capas Superior e Inferior (Top/Bottom Layers): 4 capas superiores, 4 capas inferiores
+• Patrón de Relleno (Infill Pattern): Cúbico (Cubic) o Rejilla (Grid)
+• Densidad de Relleno (Infill Density): 20%
+• Velocidad de Impresión General: 50 - 60 mm/s (ajustar según capacidades de la impresora)
+• Velocidad de Primera Capa: 20 - 25 mm/s
+
+======================================================================
+3. AJUSTES ESPECÍFICOS Y RECOMENDACIONES POR PIEZA
+======================================================================
+
+[1] CARCASA (Carcasa.stl) - Dimensiones aprox: 25cm x 10cm x 6cm
+• Relleno: 15% - 20% (suficiente rigidez reduciendo consumo de material).
+• Orientación: Colocar horizontalmente con la base más plana hacia la cama.
+• Soportes: ACTIVADOS (Generar soportes normales/árbol en voladizos o huecos internos superiores con ángulo mayor a 50°).
+
+[2] BASE / CHASIS (Base.stl)
+• Paredes: 3 a 4 paredes para garantizar rigidez mecánica.
+• Relleno: 20% - 25%.
+• Soportes: Requeridos en las pestañas de montaje y alojamientos de servos/componentes.
+
+[3] PIEZAS MECÁNICAS DE DIRECCIÓN Y TRANSMISIÓN:
+    - Pivote de dirección.stl
+    - Eje de transmisión.stl
+    - Soporte inferior de dirección.stl
+    - Soporte superior de dirección.stl
+• Relleno: 30% - 40% (requieren alta resistencia mecánica al esfuerzo continuo).
+• Paredes: 4 paredes.
+• Soportes: Requeridos en el Pivote de Dirección debido a sus ejes salientes.
+
+[4] RINES (Rin trasero.stl, Rin delantero.stl)
+• Relleno: 20% - 25%.
+• Paredes: 3 paredes.
+• Orientación: Imprimir apoyados sobre la cara circular plana posterior para evitar soportes innecesarios.
+
+======================================================================
+4. CONSEJOS DE ENSAMBLE Y POST-PROCESADO
+======================================================================
+1. Retiro de soportes: Utilizar alicates de corte para retirar cuidadosamente los soportes sin dañar los acoples ni pestañas.
+2. Ajuste de tolerancias: Si los ejes de los pivotes o soportes entran muy ajustados en sus alojamientos, repasar suavemente con una lima o lija fina de grano 240/400.
+3. Lubricación: Aplicar una pequeña gota de grasa de silicona o aceite ligero en los pivotes y articulaciones de dirección para un movimiento fluido operado por los servomotores.
+
+Autor : Santiago Enriquez
