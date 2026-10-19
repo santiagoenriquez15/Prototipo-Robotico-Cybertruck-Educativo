@@ -88,6 +88,16 @@
       margin: auto;
     }
 
+    .component-list-image {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 16px;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+    }
+
 
     /* =========================
        VIDEO DE FUNCIONAMIENTO
@@ -533,9 +543,13 @@
 
   <section class="prototype-image">
 
+    <h2>🚙 Prototipo construido</h2>
+
+    <p>Fotografía del prototipo robótico Cybertruck educativo ensamblado.</p>
+
     <img
-      src="cybertruck-vistas.png"
-      alt="Tres vistas del prototipo robótico Cybertruck educativo">
+      src="Foto_prototipo_real.png"
+      alt="Fotografía real del prototipo robótico Cybertruck educativo">
 
   </section>
 
@@ -551,7 +565,7 @@
     <p>La aplicación muestra una estimación del porcentaje de batería recibida desde el ESP32.</p>
 
     <img
-      src="aplicacion/Foto_de_aplicacion_joystick_cybertruck_baterias.jpeg"
+      src="Foto_de_aplicacion_joystick_cybertruck_baterias.jpeg"
       alt="Aplicación móvil Cybertruck con indicador aproximado de batería">
 
   </section>
@@ -638,11 +652,23 @@
           </p>
 
           <a
-            class="button"
-            href="lista-componentes1.png"
-            target="_blank">
+            href="lista-componentes_medicion_baterias.png"
+            target="_blank"
+            rel="noopener noreferrer">
 
-            🖼️ Ver lista de componentes
+            <img
+              class="component-list-image"
+              src="lista-componentes_medicion_baterias.png"
+              alt="Lista de componentes actualizada, incluidos los elementos para medir la batería">
+
+          </a>
+
+          <a
+            class="button"
+            href="lista-componentes_medicion_baterias.png"
+            download>
+
+            📥 Descargar lista de componentes
 
           </a>
 
@@ -769,7 +795,7 @@
           <h3>💻 Código ESP32</h3>
 
           <p>
-            Código para controlar el Cybertruck por Bluetooth y calcular el porcentaje aproximado de batería a partir de la lectura del divisor de voltaje.
+            Código para controlar el Cybertruck por Bluetooth y estimar el porcentaje de batería leyendo el divisor de voltaje desde la entrada ADC GPIO32 del ESP32.
           </p>
 
           <a
@@ -891,8 +917,6 @@
 
 </article>
 
-        </article>
-
 
       </div>
 
@@ -908,12 +932,13 @@
       <h2>📱 Aplicación móvil</h2>
 
       <p>
-        Controla el Cybertruck desde tu celular mediante Bluetooth y consulta el porcentaje aproximado de batería. Instala la versión actualizada de la aplicación para disponer del nuevo indicador.
+        Controla el Cybertruck desde tu celular mediante Bluetooth y consulta el porcentaje aproximado de batería. El cálculo es estimado y depende de la calibración del divisor de voltaje y del paquete de baterías utilizado. Instala la versión actualizada de la aplicación para disponer del nuevo indicador.
       </p>
 
       <a
         class="app-button"
-        href="https://raw.githubusercontent.com/santiagoenriquez15/Prototipo-Robotico-Cybertruck-Educativo/main/aplicacion/Joystick_cybertruck.apk">
+        href="https://raw.githubusercontent.com/santiagoenriquez15/Prototipo-Robotico-Cybertruck-Educativo/main/aplicacion/Joystick_cybertruck.apk"
+        download>
 
         📲 Descargar aplicación Android
 
